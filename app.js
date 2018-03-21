@@ -3,6 +3,7 @@ var app = express();
 const bodyParser = require('body-parser');
 const request = require('request');
 
+var port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -50,6 +51,6 @@ app.get("/details/:id", function(req, res) {
 //apikey=19bbe01c
 //http://omdbapi.com/?apikey=19bbe01c&s=star
 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('SERVER STARTED AT PORT 3000');
 });
