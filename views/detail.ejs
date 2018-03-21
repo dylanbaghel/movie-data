@@ -1,0 +1,24 @@
+<% include partials/header %>
+    <h1 class="detail-title"><%= movieData.Title %></h1>
+    <% if (movieData.Poster === "N/A") { %>
+        <img src="/nia.svg" alt="" class="brand-image">
+    <% } else {%>
+        <img src="<%= movieData.Poster %>" alt="" class="brand-image">
+    <% } %>
+    <div class="bigbox">
+        <ul>
+            <li>Title: <%= movieData.Title %></li>
+            <li>Year: <%= movieData.Year %></li>
+            <li>Rated: <%= movieData.Rated %></li>
+            <li>Released: <%= movieData.Released %></li>
+            <li>Runtime: <%= movieData.Runtime %></li>
+            <li>Genre: <%= movieData.Genre %></li>
+            <li>Director: <%= movieData.Director %></li>
+            <li>Writer: <%= movieData.Writer %></li>
+            <li>Actors: <%= movieData.Actors %></li>
+        </ul>
+        <h4>Plot: <%= movieData.Plot %></h4>
+    </div>
+
+
+<% include partials/footer %>

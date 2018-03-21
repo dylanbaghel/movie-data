@@ -1,0 +1,85 @@
+/* CLASS SELCTOR */
+
+.container {
+    margin: 40px auto;
+    width: 980px;
+}
+
+.search-result {
+    margin-left: 1%;
+}
+
+.detail-title {
+    text-align: center;
+}
+
+.box {
+    background: #eee;
+    padding: 10px;
+    float: left;
+    width: 45%;
+    margin: 1%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 100;
+
+}
+
+.brand-image {
+    display: block;
+    margin: 40px auto;
+    width: 300px;
+    height: 400px;
+    background: #eee;
+    padding: 10px;
+    border: 5px solid #eee;
+}
+
+.bigbox {
+    margin: 20px;
+    padding: 20px;
+    background: #eee;
+}
+
+/* ELEMENT SELECTOR */
+
+body {
+    clear: both;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: coral;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+img{
+    width: 350px;
+    height: 400px;
+    max-width: 100%;
+}

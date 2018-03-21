@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="search-result">
+    <h1>Search Result For "<%= searchTerm %>"</h1>
+    <p><a href="/">Go Back>></a></p>
+</div>
+
+<% movieData.Search.forEach(function(movie) { %>
+    <!-- <img src="<%= movie.Poster %>" alt="">
+    <li><%= movie.Title %></li> -->
+        <div class="box">
+            <a href="/details/<%= movie.imdbID %>">
+
+                <% if (movie.Poster === "N/A") { %>
+                    <img src="/nia.svg" alt="">
+                <% } else {%>
+                    <img src="<%= movie.Poster %>" alt="">
+                <% } %>
+                <p class="title"><%= movie.Title %></p>
+            </a>
+        </div>
+<% }) %>
+
+<% include partials/footer %>
